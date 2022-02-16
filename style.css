@@ -1,0 +1,34 @@
+*{
+  margin:0;
+  padding:0;
+}
+.div1 img{
+  display:block;
+       height:50vh;
+      width:auto;
+      
+  }
+  .div0{
+      display:block;
+  background-color:red;
+  height:30vh;
+  width:100vw;
+    
+  }
+  .div1{
+      
+      background-color: #bffff0;;
+  }
+.div2{
+  display:block;
+  background-color:green;
+  height:400vh;
+  width:100vw;
+}
+.div3{
+  display:block;
+  background-color:red;
+  height:30vh;
+  width:100vw;
+  }
+  
