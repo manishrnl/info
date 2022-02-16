@@ -1,34 +1,78 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  background-color: #bffff0;
+  margin: 0;
+  padding: 0;
 }
-.div1 img{
-  display:block;
-       height:50vh;
-      width:auto;
-      
-  }
-  .div0{
-      display:block;
-  background-color:red;
-  height:30vh;
-  width:100vw;
-    
-  }
-  .div1{
-      
-      background-color: #bffff0;;
-  }
-.div2{
-  display:block;
-  background-color:green;
-  height:400vh;
-  width:100vw;
+img {
+  position: center;
+  display: inline-block;
+  background-color: #bffff0;
+  height: 50vh;
+  width: auto;
 }
-.div3{
-  display:block;
-  background-color:red;
-  height:30vh;
-  width:100vw;
+
+#div_img {
+  background-color: blueviolet;
+}
+#div_contact_me {
+  margin: 1vw;
+  background-color: rgb(158, 170, 48);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #b11dd6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
-  
+}
