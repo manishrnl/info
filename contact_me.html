@@ -9,23 +9,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="fav_icon.jpg" type="image/x-image">
 </head>
+
 <body>
-  <div class="topdiv">
-    <div class="topleftdiv">
-      <a href="images.html" target="blank">
-        <img src="m0.jpg" alt="Manish" border="2px solid red" style="border-radius: 50%" />
-      </a>
-    </div>
-    <div class="toprightdiv">
-      <nav>
-        <ul>
+  <div class="top-div">
+         <a href="images.html" target="blank">
+        <img src="m0.jpg" alt="Manish"  />
+      </a><nav><ul><li class="nav-item">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="images.html">Images</a>
           <a href="contact_me.html">Contact us</a>
-        </ul>
+         <a href="download.html">Downloads</a>
+         </li></ul>
       </nav>
-    </div>
   </div>
   <div class="container">
     <div style="text-align:center">
@@ -48,6 +44,34 @@
       </div>
       <div class="column">
 
+        <!--
+                                                                    form action="mailto:manishrajrnl1@gmail.com" method="post" enctype="text/plain">
+                                                                                    <label>Enter Your Name
+                                                                                        <input type="text" name="Name:"></label><br><br>
+
+                                                                                    <label>Pick Colour
+                                                                                        <input type="color" name="Color:"></label><br><br>
+
+                                                                                    <label>Choose file
+                                                                                        <input type="file" name="File Name:"></label><br><br>
+
+                                                                                    <label>Choose Date
+                                                                                        <input type="date" name="Date:"></label><br><br>
+
+                                                                                    <label>Enter you email address for reference
+                                                                                        <input type="email" name="Email:"></label><br><br <label>Enter your Passwod
+                                                                                    <input type="password" name="Password:"></label><br><br>
+
+                                                                                    <label>Are You Sure you want to submit
+                                                                                        <input type="submit"></label><br><br>
+
+                                                                                    <textarea name="Message :" id="txtarea" cols="30" rows="10"
+                                                                                        placeholder="Enter Your Message"></textarea>
+                                                                                </form>
+
+                                                                            -->
+
+
         <form action="mailto:manishrajrnl@gmail.com" method="post" enctype="text/plain">
           <label for="fname">Your Name</label>
           <input type="text" id="fname" name="Name" placeholder="Your name..">
@@ -65,7 +89,7 @@
           <textarea id="subject" name="subject"
             placeholder="Describe Issue you had Faced or Any Suggestions You Want to give to us..."
             style="height:170px"></textarea>
-          <input type="submit" value="Submit" align="center">
+          <input class="submit-button" type="submit" value="Submit" >
         </form>
         <p></p>
       </div>
@@ -98,25 +122,25 @@
             <a href="about.html">About</a>
             <a href="images.html">Images</a>
             <a href="contact_me.html">Contact us</a>
+           <a href="download.html">Downloads</a>
           </ul>
         </nav>
       </div>
       <p>
         Reach Us through following Social Media Links<p>
-          <div class="social-icon">
-            <div class="social-item">
-              <a href="https://www.facebook.com/profile.php?id=100007636038639" target="blank"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" /></a>
-            </div>
-            <div class="social-item">
-              <a href="https://www.instagram.com/manishrnl/" target="blank"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" /></a>
-            </div>
-            <div class="social-item">
-              <a href="https://api.whatsapp.com/send?phone=919501421887" data-action="share/whatsapp/share" target="blank"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" /></a>
-            </div>
-            <div class="social-item">
-              <a href="http://twitter.com/manishrnl" target="blank"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png" /></a>
-            </div>
-          </center>
-        </div>
-      </div>
-    </html>
+<div class="social-icon">
+<div>
+<a href="https://www.facebook.com/profile.php?id=100007636038639" target="blank"><img src="facebook.png" style="width:50px"/></a>
+</div>
+<div>
+<a href="https://www.instagram.com/manishrnl/" target="blank"><img src="instagram.jpeg" style="width:50px" /></a>
+</div>
+<div >
+<a href="https://api.whatsapp.com/send?phone=919501421887" data-action="share/whatsapp/share" target="blank"><img src="whats-app.jpeg" style="width:50px"/></a>
+</div>
+<div>
+<a href="http://twitter.com/manishrnl" target="blank"><img src="twitter.jpg" style="width:50px"/></a>
+</div>
+</center>
+</div>
+</html>
