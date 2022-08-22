@@ -1,95 +1,97 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
-.topdiv {
-  display: inline-block;
-  background: linear-gradient(
-  10deg,
-  rgb(238, 72, 21) 20%,
-  rgb(214, 175, 45),
-  rgb(117, 68, 196)
-  );
-  width: auto;
-  margin: auto;
-  padding: 10px 10px 0 10px;
-  height: 88px;
-}
-.topdiv .topleftdiv {
-  display: inline-block;
-  padding-left: 20px;
-}
-.topdiv .topleftdiv p {
-  justify-content: space-between;
-
-  padding: 10px 0 0 5px;
-}
-.toprightdiv {
-  display: inline-block;
-  float: right;
-
-}
-.toprightdiv nav ul a {
-  text-decoration: none;
-  padding: 0 0 0 5px;
-  margin: 0 25px 0 0;
-
-}
-.toprightdiv nav ul a:hover {
-  padding: 0 5px 0 5px;
-  font-weight: 1000;
-  font-family: "Arial, sans-serif", "Arial Narrow", Arial, sans-serif;
-  color: rgb(182, 231, 67);
-
-}
-
-.topdiv .topleftdiv img {
-  width: 6rem;
-
-}
-.paragraph {
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 10px;
-
-}
-.body {
-  padding: 10px 0 0 0;
-  text-align: center;
-  display: inline-block;
-
+.top-div a img{
+  width:100px;
   height: auto;
-  background: linear-gradient(
-  145deg,
-  rgb(228, 130, 39) 20%,
-  rgb(193, 64, 233),
-  yellow
-  );
+  display: flex;
+  margin: 0 0 0 10px;
+  border-radius:50% ;
+  border:2px solid blue;
 }
-.body table td {
-  border-radius: 10px;
+.top-div {
+  padding-top: 10px;
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+  font-size: 30px;
+  background-color: violet;
+  justify-content: space-between;
+   text-align: right;
+}
+.nav-item{
+  list-style: none;
+  padding-top: 20px;
+}
+.nav-item a{
+   font-size: 40px;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.nav-item a:hover{
+    font-size: 40px;
+      text-decoration: underline;
+    color:white;
+}
+.about-body{
+  text-align: center;
+  font-size: 40px;
+}
+.download-button{
+  border-radius: 5%;
+}
+.details-div{
+  display: inline-block;
+  width: 1000px;
+  height: auto;
+  font-size: 30px;
+  text-align: center;
+  background-color: yellow;
+ 
+}
+.download-button {
+  justify-content: center;
+  display:inline-block;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.download-button:hover {
+  background-color: RoyalBlue;
+}
+.details-div h1{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: violet;
+  
+}
+.languages-learnt{
+  text-align: center;
 }
 .right-align {
   display: inline-block;
-  text-align: center;
+  .text-align: center;
   padding-left: 40px;
 }
 .bottom {
   padding-top: 10px;
-  background: linear-gradient(
-  10deg,
-  rgb(238, 72, 21) 20%,
-  rgb(214, 175, 45),
-  rgb(117, 68, 196)
-  );
+  background-color: green;
   display: inline-block;
-
-  height: 120px;
+  width: 1000px;
+  height: 200px;
+  font-size: 30px;
 }
 
-input[type="text"],
-select,
-textarea {
+input[type="text"],select,textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -97,13 +99,19 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type="submit"] {
+.submit-button{
+  display:flex;
+  justify-content: center;
   text-align: center;
+
+}
+input[type="submit"] {
   background-color: #b11dd6;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  
 }
 input[type="submit"]:hover {
   background-color: #45a049;
@@ -111,28 +119,34 @@ input[type="submit"]:hover {
 .copyright {
   font-size: 20px;
 }
-.social-item {
-  display: inline-block;
-  padding: auto;
+.social-icon{
+  display: flex;
+  justify-content: center;
+}
+.social-icon img{
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+}
+.social-icon img:hover{
+  width: 80px;
 }
 .bottom-rightdiv nav ul {
   justify-content: space-between;
+
 }
 .bottom-rightdiv nav ul a {
   text-decoration: none;
   padding: 0 5px 0 5px;
-  margin: 0 25px 0 0;
 }
-.bottom-rightdiv nav ul a:hover {
-  padding: 0 5px 0 5px;
-  font-weight: 1000;
-  font-family: "Arial, sans-serif", "Arial Narrow", Arial, sans-serif;
-  color: rgb(182, 231, 67);
-  text-decoration: underline;
-}
-.about_me {
-  font-weight: 1000;
-  font-size: large;
-  color: #e7380d;
-  font-family: 'Times New Roman', Times, serif
+
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }  
+  .topdiv .topleftdiv img {
+    width: 2rem;
+  }
 }
