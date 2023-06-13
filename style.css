@@ -1,152 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-  
-}
-.top-div a img{
-  width:100px;
-  height: auto;
-  display: flex;
-  margin: 0 0 0 10px;
-  border-radius:50% ;
-  border:2px solid blue;
-}
-.top-div {
-  padding-top: 10px;
-  display: inline-block;
-  width: 1000px;
-  height: 200px;
-  font-size: 30px;
-  background-color: violet;
-  justify-content: space-between;
-   text-align: right;
-}
-.nav-item{
-  list-style: none;
-  padding-top: 20px;
-}
-.nav-item a{
-   font-size: 40px;
-  padding: 10px;
-  font-size: 30px;
-  text-decoration: none;
-}
-.nav-item a:hover{
-    font-size: 40px;
-      text-decoration: underline;
-    color:white;
-}
-.about-body{
-  text-align: center;
-  font-size: 40px;
-}
-.download-button{
-  border-radius: 5%;
-}
-.details-div{
-  display: inline-block;
-  width: 1000px;
-  height: auto;
-  font-size: 30px;
-  text-align: center;
-  background-color: yellow;
- 
-}
-.download-button {
-  justify-content: center;
-  display:inline-block;
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  text-decoration: none;
-  margin: 20px;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 40px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish's details</title>
+  <style>
+    /* Add your responsive CSS styles here */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-.download-button:hover {
-  background-color: RoyalBlue;
-}
-.details-div h1{
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: violet;
-  
-}
-.languages-learnt{
-  text-align: center;
-}
-.right-align {
-  display: inline-block;
-  .text-align: center;
-  padding-left: 40px;
-}
-.bottom {
-  padding-top: 10px;
-  background-color: green;
-  display: inline-block;
-  width: 1000px;
-  height: 200px;
-  font-size: 30px;
-}
+    .top-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
 
-input[type="text"],select,textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-.submit-button{
-  display:flex;
-  justify-content: center;
-  text-align: center;
+    .nav-item {
+      display: flex;
+      list-style-type: none;
+    }
 
-}
-input[type="submit"] {
-  background-color: #b11dd6;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  
-}
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-.copyright {
-  font-size: 20px;
-}
-.social-icon{
-  display: flex;
-  justify-content: center;
-}
-.social-icon img{
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 10px;
-}
-.social-icon img:hover{
-  width: 80px;
-}
-.bottom-rightdiv nav ul {
-  justify-content: space-between;
+    .nav-item a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
 
-}
-.bottom-rightdiv nav ul a {
-  text-decoration: none;
-  padding: 0 5px 0 5px;
-}
+    .details-div {
+      padding: 20px;
+    }
 
-@media screen and (max-width: 600px) {
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }  
-  .topdiv .topleftdiv img {
-    width: 2rem;
-  }
-}
+    .details-div h1 {
+      margin-top: 0;
+    }
+
+    .details-div p {
+      margin-bottom: 5px;
+    }
+
+    .bottom {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .social-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icon img {
+      width: 50px;
+      margin: 0 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Responsive styles for screens up to 600px wide */
+      .top-div {
+        flex-direction: column;
+      }
+
+      .nav-item {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .nav-item a {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+  <link rel="shortcut icon" href="fav_icon.jpg" type="image/x-image">
+</head>
+<body>
+  <div class="top-div">
+    <a href="images.html" target="blank">
+      <img src="m0.jpg" alt="Manish" />
+    </a>
+    <nav>
+      <ul class="nav-item">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="images.html">Images</a>
+        </li>
+        <li>
+          <a href="contact_me.html">Contact us</a>
+        </li>
+        <li>
+          <a href="download.html">Downloads</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Rest of your HTML code... -->
+</body>
+</html>
