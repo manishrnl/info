@@ -1,108 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manish's details</title>
-  <style>
-    /* Add your responsive CSS styles here */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    .top-div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #f0f0f0;
-    }
+.top-div {
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .nav-item {
-      display: flex;
-      list-style-type: none;
-    }
+.top-div img {
+  width: 100px;
+  height: auto;
+}
 
-    .nav-item a {
-      margin-right: 10px;
-      text-decoration: none;
-    }
+.top-div nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-    .details-div {
-      padding: 20px;
-    }
+.top-div nav ul li {
+  margin-left: 10px;
+}
 
-    .details-div h1 {
-      margin-top: 0;
-    }
+.details-div {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
 
-    .details-div p {
-      margin-bottom: 5px;
-    }
+.details-div h1 {
+  font-size: 24px;
+}
 
-    .bottom {
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
+.details-div hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
 
-    .social-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.bottom {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
 
-    .social-icon img {
-      width: 50px;
-      margin: 0 5px;
-    }
+.bottom p {
+  margin: 0;
+}
 
-    @media only screen and (max-width: 600px) {
-      /* Responsive styles for screens up to 600px wide */
-      .top-div {
-        flex-direction: column;
-      }
+.bottom nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-      .nav-item {
-        flex-direction: column;
-        margin-top: 10px;
-      }
+.bottom nav ul li {
+  margin-left: 10px;
+}
 
-      .nav-item a {
-        margin-right: 0;
-        margin-bottom: 5px;
-      }
-    }
-  </style>
-  <link rel="shortcut icon" href="fav_icon.jpg" type="image/x-image">
-</head>
-<body>
-  <div class="top-div">
-    <a href="images.html" target="blank">
-      <img src="m0.jpg" alt="Manish" />
-    </a>
-    <nav>
-      <ul class="nav-item">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="images.html">Images</a>
-        </li>
-        <li>
-          <a href="contact_me.html">Contact us</a>
-        </li>
-        <li>
-          <a href="download.html">Downloads</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <!-- Rest of your HTML code... -->
-</body>
-</html>
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon div {
+  margin: 10px;
+}
+
+.social-icon img {
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .details-div {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .details-div h1 {
+    font-size: 20px;
+  }
+
+  .bottom {
+    padding: 10px;
+  }
+
+  .bottom p {
+    font-size: 14px;
+  }
+}
