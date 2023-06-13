@@ -120,3 +120,38 @@ body {
     font-size: 14px;
   }
 }
+/* style.css */
+
+/* Responsive styles for images */
+
+#div_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#div_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for different screen sizes */
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  #div_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for screens up to 480px wide */
+  #div_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
