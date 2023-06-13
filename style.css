@@ -1,3 +1,26 @@
+/* style.css */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply styles to the m0 image */
+img[src="m0.jpg"] {
+  border-radius: 50%;
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+}
+
+/* Align the headers in a line */
+h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
 body {
   margin: 0;
   padding: 0;
