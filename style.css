@@ -230,3 +230,18 @@ body {
 }
 
 /* Additional styles can be added based on specific requirements */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .download-button {
+    display: block;
+  }
+}
