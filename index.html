@@ -54,29 +54,56 @@
     <hr>
     <p>Address: Vill+post-Andah Near Braham Asthan</p>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .container {
-      max-width: 100%;
-      width: 100%;
-      padding: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
     }
 
-    .container p {
+    p {
       word-wrap: break-word;
+      margin: 10px 0;
+    }
+
+    .copy-button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
-</head>
 <body>
   <div class="container">
     <a href="https://www.google.com/maps/place/64XH%2BPCR+Andah+Bramha+Asthan(Maa+Art's+Rajeev),+Andah,+Bihar+847239/@26.2494213,86.1286414,19z/data=!4m9!1m2!2m1!1smaps+and+brahmasthan!3m5!1s0x39edd1a20a15537b:0xda8cceb5ced82f5d!8m2!3d26.2493644!4d86.1285172!16s%2Fg%2F11ddzhfgc_?hl=en-GB" target="_blank">
-      Click to get the Exact Location
+      Click to get Exact Location
     </a>
     <hr>
     <p>OR Paste the link given below into the browser:</p>
-    <p>https://www.google.com/maps/place/64XH%2BPCR+Andah+Bramha+Asthan(Maa+Art's+Rajeev),+Andah,+Bihar+847239/@26.2494213,86.1286414,19z/data=!4m9!1m2!2m1!1smaps+and+brahmasthan!3m5!1s0x39edd1a20a15537b:0xda8cceb5ced82f5d!8m2!3d26.2493644!4d86.1285172!16s%2Fg%2F11ddzhfgc_?hl=en-GB</p>
+    <p id="link-text">https://www.google.com/maps/place/64XH%2BPCR+Andah+Bramha+Asthan(Maa+Art's+Rajeev),+Andah,+Bihar+847239/@26.2494213,86.1286414,19z/data=!4m9!1m2!2m1!1smaps+and+brahmasthan!3m5!1s0x39edd1a20a15537b:0xda8cceb5ced82f5d!8m2!3d26.2493644!4d86.1285172!16s%2Fg%2F11ddzhfgc_?hl=en-GB</p>
     <hr>
+    <p>OR</p>
+    <button class="copy-button" onclick="copyLink()">Copy Link</button>
   </div>
-</body>
+
+  <script>
+    function copyLink() {
+      const linkText = document.getElementById('link-text');
+      const textArea = document.createElement('textarea');
+      textArea.value = linkText.innerText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('Link copied!');
+    }
+  </script>
+  </body>
     <p>State: Bihar</p>
     <hr>
     <p>Pin Code: 847 234</p>
@@ -156,4 +183,4 @@
   </div>
 </body>
 
-</html>
+  </html
