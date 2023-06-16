@@ -40,7 +40,55 @@
     <hr>
     <p>D.O.B: 14 March 2000</p>
     <hr>
-    <p>Age: 23 Year</p>
+  <style>
+    body {
+      font-family: poppins, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    .result {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+      
+      .result {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+<body>
+  <div class="result" id="result"></div>
+  
+  <script>
+    function calculateAge() {
+      var dob = new Date("March 14, 2000");
+      var currentDate = new Date();
+      
+      var timeDiff = currentDate.getTime() - dob.getTime();
+      var days = Math.floor(timeDiff / (1000 * 3600 * 24));
+      var years = Math.floor(days / 365);
+      var remainingDays = days % 365;
+      
+      var resultElement = document.getElementById("result");
+      resultElement.innerHTML = "Age: " + years + " years, " + remainingDays + " days";
+    }
+    
+    calculateAge();
+    setInterval(calculateAge, 1000 * 60 * 60 * 24); // Update every day
+  </script>
+</body>
+
+
     <hr>
     <p>Height: 5'3"</p>
     <hr>
