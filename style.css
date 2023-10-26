@@ -3,29 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face { font-family: Helvetica65; src: url('helvetica65.woff'); }
 
-/* Apply styles to the m0 image */
 img[src="m0.jpg"] {
   border-radius: 50%;
-  width: 150px; /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
+  width: 150px;
+  height: 150px;
 }
-
-/* Align the headers in a line */
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   display: inline-block;
   margin: 0 10px;
 }
-h1{
-  color:brown;
+h1 {
+  color: brown;
 }
-
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica65" ;/* , "Helvetica Neue", Helvetica, Arial, sans-serif */
 }
-
 .top-div {
   background-color: #f5f5f5;
   padding: 10px;
@@ -33,49 +29,41 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .top-div img {
   width: 100px;
   height: auto;
 }
-
 .top-div nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 .top-div nav ul li {
   margin-left: 10px;
 }
-
 .details-div {
   margin: 20px;
   padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
 }
-
-.details-div h1,h2 {
+.details-div h1,
+h2 {
   font-size: 24px;
 }
-
 .details-div hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 10px 0;
 }
-
 .bottom {
   background-color: #f5f5f5;
   padding: 20px;
 }
-
 .bottom p {
   margin: 0;
 }
-
 .bottom nav ul {
   list-style: none;
   margin: 0;
@@ -83,47 +71,20 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .bottom nav ul li {
   margin-left: 10px;
 }
-
 .social-icon {
   display: flex;
   justify-content: center;
 }
-
 .social-icon div {
   margin: 10px;
 }
-
 .social-icon img {
   width: 50px;
   height: auto;
 }
-
-@media (max-width: 768px) {
-  .details-div {
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .details-div h1 {
-    font-size: 20px;
-  }
-
-  .bottom {
-    padding: 10px;
-  }
-
-  .bottom p {
-    font-size: 14px;
-  }
-}
-/* style.css */
-
-/* Responsive styles for images */
-
 #div_img {
   display: flex;
   flex-wrap: wrap;
@@ -131,14 +92,10 @@ body {
   align-items: center;
   gap: 10px;
 }
-
-#div_img img {
-  max-width: 100%;
-  height: auto;
+#div_img img {                /* YAHAN PE PERFECT IMAGE KE LIYE CHANGE KARO*/
+  max-width: 50%;
+ /* height: auto;*/
 }
-
-/* Media queries for different screen sizes */
-
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide */
   #div_img img {
@@ -146,7 +103,6 @@ body {
     height: auto;
   }
 }
-
 @media (max-width: 480px) {
   /* Styles for screens up to 480px wide */
   #div_img img {
@@ -154,57 +110,39 @@ body {
     height: auto;
   }
 }
-
 .about-body {
-    padding: 20px;
-    text-align: center;
-  }
-
-
-
-/* Responsive Styles */
-
+  padding: 20px;
+  text-align: center;
+}
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
 }
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 .column {
   float: left;
   width: 50%;
   padding: 10px;
 }
-
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%;
-  }
-}
-
 .top-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-
 .nav-item {
   list-style-type: none;
   display: inline-block;
 }
-
 .nav-item a {
   text-decoration: none;
   margin-right: 10px;
 }
-
 .submit-button {
   background-color: #337ab7;
   color: white;
@@ -213,13 +151,11 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-
 .bottom {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
 }
-
 .bottom-rightdiv {
   float: right;
 }
@@ -229,11 +165,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .social-icon div {
   margin: 0 5px;
 }
-
 /* Additional styles can be added based on specific requirements */
 .download-button {
   display: inline-block;
@@ -244,10 +178,4 @@ body {
   text-decoration: none;
   border-radius: 20px;
   margin: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .download-button {
-    display: block;
-  }
 }
