@@ -155,15 +155,16 @@
             <hr>
             <script>
                 function copyLink() {
-                    const linkText = document.getElementById('link-text');
+                    const linkText = document.querySelector('.link1').href;
                     const textArea = document.createElement('textarea');
-                    textArea.value = linkText.innerText;
+                    textArea.value = linkText;
                     document.body.appendChild(textArea);
                     textArea.select();
                     document.execCommand('copy');
                     document.body.removeChild(textArea);
                     alert('Link copied! you can now paste this link into the Browser');
                 }
+
             </script>
         </body>
         <p>State: Bihar</p>
@@ -246,23 +247,21 @@
                 <div>
                     <script>
                         function getWebsiteText() {
-                            // Replace this with your desired text extraction method
-                            // (e.g., grabbing specific element content)
-                            return document.getElementById("paragraph returned").innerText;
+                            return document.getElementById("paragraph").innerText;
                         }
                     </script>
-                   
-                    <a href="https://wa.me/919501421887?text=Replying from website!" data-action="share/whatsapp/share" target="blank"><img src="whats-app.jpeg" style="width:50px"/></a>
+                    <a href="https://wa.me/919501421887?text=Replying from website!"></a>
                 </div>
                 <div>
                     <a href="http://twitter.com/manishrnl" target="_blank"><img src="twitter.jpg"
                             style="width:50px" /></a>
                 </div>
                 <div>
-                   <a href="tel:+919501421887" data-action="call">
-            <img src="phone-icon.png" alt="Call Me" style="width:50px">
-            <i class="fas fa-phone" aria-hidden="true"></i>
-          </a>
+                    <a href="tel:+919501421887" data-action="call" target="_blank">
+                        <img src="call.ico" style="width:50px"></a>
+                    
+
+
                 </div>
             </div>
         </center>
